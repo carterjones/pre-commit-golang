@@ -7,7 +7,7 @@ golang hooks for http://pre-commit.com/
 
 In your project root dir add this to `.pre-commit-config.yaml`
 
-    -   repo: https://github.com/troian/pre-commit-golang
+    -   repo: https://github.com/carterjones/pre-commit-golang
         sha: HEAD
         hooks:
         -   id: go-fmt
@@ -24,7 +24,7 @@ In your project root dir add this to `.pre-commit-config.yaml`
 ### Available hooks
 
 - `go-fmt` - Runs `gofmt`, requires golang
-- `go-vet` - Runs `go vet`, requires golang
+- `go-vet` - Runs `go tool vet`, requires golang
 - `go-lint` - Runs `golint`, requires https://github.com/golang/lint
 - `go-build` - Runs `go build`, requires golang
 - `go-metalinter` - Runs `gometalinter`, requires https://github.com/alecthomas/gometalinter
